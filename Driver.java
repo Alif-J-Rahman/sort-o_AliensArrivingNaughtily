@@ -23,12 +23,27 @@ public class Driver{
   }
 
   public static void main(String[] args) {
-    ArrayList<Comparable> retAL = new ArrayList<Comparable>();
+    ArrayList<Comparable> arr1 = new ArrayList<Comparable>();
+    ArrayList<Comparable> arr2 = new ArrayList<Comparable>();
+    ArrayList<Comparable> arr3 = new ArrayList<Comparable>();
 
-    populate(10, 0, 9, retAL);
-    System.out.println(retAL);
+    populate(10, 0, 9, arr1);
+    System.out.println(arr1);
 
-    Sorts.insertion(retAL);
-    System.out.println(retAL);
+    Sorts.bubble(arr1);
+    System.out.println("testing bubbleSort: " + arr1);
+
+    populate(10, 0, 9, arr2);
+    System.out.println(arr2);
+
+    Sorts.selection(arr2);
+    System.out.println("testing selectionSort: " + arr2);
+
+    populate(10, 0, 9, arr3);
+    System.out.println(arr3);
+
+    Sorts.insertion(arr3);
+    System.out.println("testing insertionSort: " + arr3);
+
     }
 }
