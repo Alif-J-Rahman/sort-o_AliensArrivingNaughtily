@@ -8,6 +8,6 @@
 ### Best Case: n-1 passthroughs
 ### Worst Case: n-1 passthroughs
 
-### InsertionSort
+## InsertionSort
 ### Best Case: n-1 passthroughs
 ### Worst Case: n-1 passthroughs
