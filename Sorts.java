@@ -2,7 +2,6 @@ import java.util.ArrayList;
 
 public class Sorts{
   // Class sort to implement all of the sort methods that we learn
-/*
   public static void bubble( ArrayList<Comparable> data){
     for (int x = data.size()-1; x > 0; x--) {
       for (int i = 0; i < x; i++) {
@@ -16,8 +15,6 @@ public class Sorts{
       }
     }
   }
-  */
-  /*
   public static void selection( ArrayList<Comparable> data ){
      //note: this version places greatest value at "rightmost" end
 
@@ -45,7 +42,6 @@ public class Sorts{
        // System.out.println( "after swap: " +  data );//diag
      }
    }//end selectionSort
-*/
 
    public static void insertion( ArrayList<Comparable> data){
        for(int partition = 1; partition < data.size(); partition++) {
@@ -71,22 +67,5 @@ public class Sorts{
          }
        }
      }//end insertionSortV
-     /*
-     public static void insertion( ArrayList<Comparable> input )
- {
-   //declare and initialize empty ArrayList for copying
-   ArrayList<Comparable> data = new ArrayList<Comparable>();
-
-   //copy input ArrayList into working ArrayList
-   for( Comparable o : input )
-     data.add( o );
-
-   //sort working ArrayList
-   insertionSortV( data );
-
-   //return working ArrayList
-   return;
- }//end insertionSort
- */
  
 }// end class
