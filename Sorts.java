@@ -51,7 +51,6 @@ public class Sorts{
        for(int i=0; i <= pass; i++) {
          if(data.get(i).compareTo(data.get(maxPos)) >= 0){
            maxPos = i;
-           selectionSwapCtr += 1;
          }
          selectionCompCtr += 1;
        }
@@ -59,7 +58,7 @@ public class Sorts{
        temp = data.get(pass);
        data.set(pass, data.get(maxPos));
        data.set(maxPos, temp);
-
+       selectionSwapCtr += 1;
        selectionPassCtr += 1;
 
      }
