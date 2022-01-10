@@ -62,7 +62,7 @@ public class Driver{
 
     Sorts.insertion(arr3);
     System.out.println("testing insertionSort: " + arr3);
-//
+
     populate(arr4);
     System.out.println(arr4);
 
