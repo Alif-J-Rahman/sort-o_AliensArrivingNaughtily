@@ -1,0 +1,38 @@
+// Ameer Alnasser + Nakib Abedin + Alif Rahman
+// APCS pd06
+// L04: Never Fear, Big O is Here!
+// 2022-01-010m
+// time spent: 2.0 hrs
+
+Disco:
+QCC:
+ * When is it better to use SelectionSort over BubbleSort?
+ * When is it better to use InsertionSort over SelectionSort?
+ * When is it better to use BubbleSort over InsertionSort?
+BUB-QA:
+ * q0: If a pass requires no swaps, what do you know?
+ * a0: It is fully sorted
+ * q1: After pass p, what do you know?
+ * a1: The element at index p-1 is correct
+ * q2: How many passes are necessary to completely sort?
+ * a2: No more than length-1
+SEL-QA:
+ * q0: How many passes to sort n elements?
+ * a0: n-1 passes
+ * q1: What do you know after pass p?
+ * a1: p elements are sorted until p=n-1 where p+1 elements are sorted
+ * q2: How do you know if sorted?
+ * a2: after the n-1 pass, it has to be sorted.
+ * q3: What does a pass boil down to?
+ * a3: finding the minimum of a collection
+INS-QA:
+ * q0: How many passes to sort n elements?
+ * a0: It takes n-1 passes.
+ * q1: What do you know after pass p?
+ * a1: p+1 elements are sorted in the partition.
+ * q2: How will you know when sorted?
+ * a2: When the partition size is equal to the array length.
+ * q3: What constitues a pass?
+ * a3: When an element is added into the partition.
+ * q4: What must you track?
+ * a4: We must track partition size.

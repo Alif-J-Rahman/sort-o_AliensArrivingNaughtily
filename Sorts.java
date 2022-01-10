@@ -1,3 +1,9 @@
+// Ameer Alnasser + Nakib Abedin + Alif Rahman
+// APCS pd06
+// L04: Never Fear, Big O is Here!
+// 2022-01-010m
+// time spent: 2.0 hrs
+
 import java.util.ArrayList;
 
 public class Sorts{

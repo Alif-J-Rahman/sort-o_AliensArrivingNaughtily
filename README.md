@@ -1,11 +1,11 @@
 # sort-o_AliensArrivingNaughtily
-
+* Roster: Ameer Alnasser + Nakib Abedin + Alif Rahman
 ## BubbleSort
 
 ### Best Case: 1 pass-through, 0 swaps
 * Array already sorted
 ### Worst Case: n-1 passthroughs
-* 
+*
 
 ## SelectionSort
 
