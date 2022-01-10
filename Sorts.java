@@ -6,8 +6,6 @@
 
 import java.util.ArrayList;
 
-
-
 public class Sorts{
 
   // Class sort to implement all of the sort methods that we learn
@@ -15,7 +13,9 @@ public class Sorts{
     int bubblePassCtr = 0;
     int bubbleCompCtr = 0;
     int bubbleSwapCtr = 0;
+    int temp = 0;
     for (int x = data.size()-1; x > 0; x--) {
+      temp = bubbleSwapCtr;
       for (int i = 0; i < x; i++) {
         Comparable n = data.get(i);
         Comparable m = data.get(i+1);
@@ -28,10 +28,14 @@ public class Sorts{
         bubbleCompCtr += 1;
       }
       bubblePassCtr += 1;
+      if (bubbleSwapCtr == temp) {
+        break;
+      }
     }
     System.out.println("Bubble sort on an array of size " + data.size() + " took " + bubblePassCtr + " passes, " + bubbleCompCtr + " comparisons, and " + bubbleSwapCtr + "swaps");
 
-  }
+  } //end bubbleSort
+
   public static void selection( ArrayList<Comparable> data ){
      int maxPos;
      Comparable temp;
@@ -61,7 +65,7 @@ public class Sorts{
      }
      System.out.println("Selection sort on an array of size " + data.size() + " took " + selectionPassCtr + " passes, " + selectionCompCtr + " comparisons, and " + selectionSwapCtr + " swaps");
 
-   }//end selectionSort
+   } //end selectionSort
 
    public static void insertion( ArrayList<Comparable> data){
 
@@ -86,6 +90,6 @@ public class Sorts{
          insertionPassCtr += 1;
        }
        System.out.println("insertion sort on an array of size " + data.size() + " took " + insertionPassCtr + " passes, " + insertionCompCtr + " comparisons, and " + insertionSwapCtr + " swaps");
-     }//end insertion
+     } //end insertion
 
 }// end class
