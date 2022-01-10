@@ -17,7 +17,7 @@
 ### Best Case:
 * Selection Sort takes the same amount of comparaisons no matter the properties of the array. It always compares each element with every other element. Therefore, it would take (n^2-n)/2 comparisons.
 * Best-case time complexity: O(n^2).
-<img src="https://cdn.discordapp.com/attachments/928064244308668437/930217024997691392/unknown.png" />
+
 ### Worst Case:
 * Selection Sort takes the same amount of comparaisons no matter the properties of the array. It always compares each element with every other element. Therefore, it would take (n^2-n)/2 comparisons.
 * Worst-case time complexity: O(n^2).
