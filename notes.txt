@@ -5,6 +5,8 @@
 // time spent: 2.0 hrs
 
 Disco:
+ * All of the sorts follow a similiar pattern of complexity.
+ * Best case scenario is almost always a definate time.
 QCC:
  * When is it better to use SelectionSort over BubbleSort?
  * When is it better to use InsertionSort over SelectionSort?
