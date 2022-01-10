@@ -9,11 +9,12 @@ import java.util.ArrayList;
 public class Driver{
 
   public static ArrayList populate( int size, int lo, int hi, ArrayList<Comparable> arr ) {
-    arr.add(1);
-    arr.add(3);
-    arr.add(5);
-    arr.add(7);
-    arr.add(12);
+    while( size > 0 ) {
+      //     offset + rand int on interval [lo,hi]
+      arr.add( lo + (int)( (hi-lo+1) * Math.random() ) );
+      size--;
+    }
+    shuffle(arr);
     return arr;
   }
 
