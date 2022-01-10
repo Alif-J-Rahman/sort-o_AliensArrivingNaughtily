@@ -8,13 +8,23 @@ import java.util.ArrayList;
 
 public class Driver{
 
-  public static ArrayList populate( int size, int lo, int hi, ArrayList<Comparable> arr ) {
-    while( size > 0 ) {
-      //     offset + rand int on interval [lo,hi]
-      arr.add( lo + (int)( (hi-lo+1) * Math.random() ) );
-      size--;
-    }
-    shuffle(arr);
+  public static ArrayList populate(ArrayList<Comparable> arr ) {
+    arr.add(12);
+    arr.add(7);
+    arr.add(5);
+    arr.add(3);
+    arr.add(1);
+
+    return arr;
+  }
+
+  public static ArrayList populate2(ArrayList<Comparable> arr ) {
+    arr.add(1);
+    arr.add(3);
+    arr.add(5);
+    arr.add(7);
+    arr.add(12);
+
     return arr;
   }
 
@@ -32,24 +42,44 @@ public class Driver{
     ArrayList<Comparable> arr1 = new ArrayList<Comparable>();
     ArrayList<Comparable> arr2 = new ArrayList<Comparable>();
     ArrayList<Comparable> arr3 = new ArrayList<Comparable>();
-
-    populate(10, 0, 9, arr1);
+ ArrayList<Comparable> arr4 = new ArrayList<Comparable>();
+ ArrayList<Comparable> arr5 = new ArrayList<Comparable>();
+ ArrayList<Comparable> arr6 = new ArrayList<Comparable>();
+    populate(arr1);
     System.out.println(arr1);
 
     Sorts.bubble(arr1);
     System.out.println("testing bubbleSort: " + arr1);
 
-    populate(10, 0, 9, arr2);
+    populate(arr2);
     System.out.println(arr2);
 
     Sorts.selection(arr2);
     System.out.println("testing selectionSort: " + arr2);
 
-    populate(10, 0, 9, arr3);
+    populate(arr3);
     System.out.println(arr3);
 
     Sorts.insertion(arr3);
     System.out.println("testing insertionSort: " + arr3);
+//
+    populate(arr4);
+    System.out.println(arr4);
+
+    Sorts.bubble(arr4);
+    System.out.println("testing bubbleSort: " + arr4);
+
+    populate(arr5);
+    System.out.println(arr5);
+
+    Sorts.selection(arr5);
+    System.out.println("testing selectionSort: " + arr5);
+
+    populate(arr6);
+    System.out.println(arr6);
+
+    Sorts.insertion(arr6);
+    System.out.println("testing insertionSort: " + arr6);
 
     }
 }
